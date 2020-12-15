@@ -19,6 +19,9 @@ class Portfolio extends StatelessWidget {
       theme: ThemeData(
         bottomAppBarTheme: BottomAppBarTheme(color: Colors.blueGrey[900]),
         scaffoldBackgroundColor: Colors.blueGrey[900],
+        accentColorBrightness: Brightness.dark,
+        backgroundColor: Colors.blueGrey[900],
+        primaryColor: Colors.blueGrey[900],
       ),
     );
   }

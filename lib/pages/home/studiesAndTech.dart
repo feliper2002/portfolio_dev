@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:portfolio/styles/textsyles.dart';
-import 'dart:html' as html;
 
 class StudiesAndTechnology extends StatefulWidget {
   StudiesAndTechnology({Key key}) : super(key: key);
@@ -11,23 +10,26 @@ class StudiesAndTechnology extends StatefulWidget {
 }
 
 class _StudiesAndTechnologyState extends State<StudiesAndTechnology> {
+  var profilePic = AssetImage('lib/assets/images/profilepic.jpg');
+
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Card(
+        shadowColor: Colors.lightBlue,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         elevation: 5,
         child: Container(
-          color: Colors.white,
+          color: Colors.blueGrey[900],
           height: 500,
-          width: 500,
+          width: 700,
           child: Padding(
             padding: EdgeInsets.all(8),
             child: Column(
               children: [
                 CircleAvatar(
                   radius: 60,
-                  backgroundImage:
-                      AssetImage('lib/assets/images/profilepic.jpg'),
+                  backgroundImage: profilePic,
                 ),
                 SizedBox(height: 10),
                 Center(
@@ -41,7 +43,7 @@ class _StudiesAndTechnologyState extends State<StudiesAndTechnology> {
                         'Flutter Developer',
                         style: flutterDev_style,
                       ),
-                      Text('☕'),
+                      Text('☕', style: TextStyle(fontSize: 18)),
                       SizedBox(height: 16),
                       Container(
                         height: 180,
@@ -55,94 +57,7 @@ class _StudiesAndTechnologyState extends State<StudiesAndTechnology> {
                         ),
                       ),
                       SizedBox(height: 16),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Expanded(
-                            child: Column(
-                              children: [
-                                InkWell(
-                                  onTap: () {
-                                    html.window.open(
-                                      'https://github.com/feliper2002',
-                                      'feliper2002',
-                                    );
-                                  },
-                                  child: Container(
-                                    height: 30,
-                                    width: 30,
-                                    decoration: BoxDecoration(
-                                      image: DecorationImage(
-                                        image: AssetImage(
-                                            'lib/assets/icons/github.png'),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Text(
-                                  'GITHUB',
-                                  style: flutterDev_style,
-                                ),
-                              ],
-                            ),
-                          ),
-                          Expanded(
-                            child: Column(
-                              children: [
-                                InkWell(
-                                  onTap: () {
-                                    html.window.open(
-                                      'https://instagram.com/felipe.developer/',
-                                      'felipe.developer',
-                                    );
-                                  },
-                                  child: Container(
-                                    height: 30,
-                                    width: 30,
-                                    decoration: BoxDecoration(
-                                      image: DecorationImage(
-                                        image: AssetImage(
-                                            'lib/assets/icons/instagram.webp'),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Text(
-                                  'INSTAGRAM',
-                                  style: flutterDev_style,
-                                ),
-                              ],
-                            ),
-                          ),
-                          Expanded(
-                            child: Column(
-                              children: [
-                                InkWell(
-                                  onTap: () {
-                                    html.window.open(
-                                      'https://www.linkedin.com/in/felipe-azevedo-ribeiro/',
-                                      'Felipe Azevedo Ribeiro',
-                                    );
-                                  },
-                                  child: Container(
-                                    height: 30,
-                                    width: 30,
-                                    child: Text(
-                                      'in',
-                                      style: linkedinStyle,
-                                    ),
-                                  ),
-                                ),
-                                Text(
-                                  'LINKEDIN',
-                                  style: flutterDev_style,
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
+                      // SocialMedias(),
                     ],
                   ),
                 ),

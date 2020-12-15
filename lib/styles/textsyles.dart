@@ -6,12 +6,13 @@ var appBarstyle = GoogleFonts.vt323(
 );
 
 var myName_style = GoogleFonts.vt323(
+  color: Colors.white,
   fontSize: 30,
 );
 
 var flutterDev_style = GoogleFonts.vt323(
   fontSize: 24,
-  color: Colors.grey[600],
+  color: Colors.grey[400],
 );
 
 var linkedinStyle = GoogleFonts.vt323(
@@ -31,7 +32,7 @@ var projectsContainer_style = GoogleFonts.vt323(
 
 var mainContainerTextStyle = GoogleFonts.vt323(
   fontSize: 22,
-  color: Colors.black,
+  color: Colors.white,
 );
 
 var contactTextStyle = GoogleFonts.vt323(
