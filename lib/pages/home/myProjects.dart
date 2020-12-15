@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/models/projects/projectCards.dart';
-import 'package:portfolio/pages/home/contacts.dart';
 import 'package:portfolio/styles/textsyles.dart';
-import 'dart:html' as html;
 
 class MyProjects extends StatefulWidget {
   MyProjects({Key key}) : super(key: key);
@@ -43,7 +41,16 @@ class _MyProjectsState extends State<MyProjects> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: [],
+                children: [
+                  ProjectCard(
+                    projectDescription: 'Isso é um teste',
+                    projectName: 'Pokédex',
+                    projectUrl:
+                        'https://github.com/feliper2002/pokedex-flutter-api',
+                    cardColor: Colors.white,
+                    cardShadowColor: Colors.green,
+                  ),
+                ],
               ),
             ),
           ],

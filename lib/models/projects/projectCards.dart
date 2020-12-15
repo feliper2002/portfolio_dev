@@ -7,9 +7,10 @@ class ProjectCard extends StatefulWidget {
     Key key,
     @required this.projectUrl,
     @required this.projectName,
-    @required this.projectDescription,
+    this.projectDescription,
     this.projectImage,
     this.cardColor,
+    this.cardShadowColor,
   }) : super(key: key);
 
   String projectUrl;
@@ -17,6 +18,7 @@ class ProjectCard extends StatefulWidget {
   String projectDescription;
   Image projectImage;
   Color cardColor;
+  Color cardShadowColor;
 
   @override
   _ProjectCardState createState() => _ProjectCardState();
@@ -27,22 +29,27 @@ class _ProjectCardState extends State<ProjectCard> {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        html.window.open(widget.projectUrl, widget.projectName);
+        html.window.open('${widget.projectUrl}', '${widget.projectName}');
       },
       child: Container(
         height: 200,
-        width: 150,
+        width: 330,
         child: Card(
+          color: widget.cardColor,
+          shadowColor: widget.cardShadowColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
           ),
           child: Column(
             children: [
               Container(
+                padding: EdgeInsets.only(left: 5, top: 3, right: 3),
                 height: 160,
                 width: 130,
                 child: Text(
-                  widget.projectDescription,
+                  '${widget.projectDescription}' == null
+                      ? ' '
+                      : '${widget.projectDescription}',
                   textAlign: TextAlign.start,
                   style: projectsCardAboutTextStyle,
                 ),
