@@ -11,11 +11,13 @@ class ProjectCard extends StatefulWidget {
     this.projectImage,
     this.cardColor,
     this.cardShadowColor,
+    this.usedTechnologies,
   }) : super(key: key);
 
   String projectUrl;
   String projectName;
   String projectDescription;
+  String usedTechnologies;
   Image projectImage;
   Color cardColor;
   Color cardShadowColor;
@@ -40,23 +42,37 @@ class _ProjectCardState extends State<ProjectCard> {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
           ),
-          child: Column(
+          child: Row(
             children: [
               Container(
-                padding: EdgeInsets.only(left: 5, top: 3, right: 3),
-                height: 160,
-                width: 130,
-                child: Text(
-                  '${widget.projectDescription}' == null
-                      ? ' '
-                      : '${widget.projectDescription}',
-                  textAlign: TextAlign.start,
-                  style: projectsCardAboutTextStyle,
-                ),
+                height: 80,
+                width: 80,
+                child: widget.projectImage,
+              ),
+              Column(
+                children: [
+                  Container(
+                    padding: EdgeInsets.only(left: 5, top: 3, right: 3),
+                    height: 160,
+                    width: 130,
+                    child: Text(
+                      '${widget.projectDescription}' == null
+                          ? ' '
+                          : '${widget.projectDescription}',
+                      textAlign: TextAlign.start,
+                      style: projectsCardAboutTextStyle,
+                    ),
+                  ),
+                  Text(
+                    widget.projectName.toUpperCase(),
+                    style: projectCard_style,
+                  ),
+                ],
               ),
               Text(
-                widget.projectName.toUpperCase(),
-                style: projectCard_style,
+                'Tecnologias:\n'
+                '${widget.usedTechnologies}',
+                style: projectsCardAboutTextStyle,
               ),
             ],
           ),

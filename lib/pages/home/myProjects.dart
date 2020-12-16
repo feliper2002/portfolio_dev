@@ -43,12 +43,39 @@ class _MyProjectsState extends State<MyProjects> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   ProjectCard(
-                    projectDescription: 'Isso é um teste',
+                    projectDescription: 'Uma aplicação que simula'
+                        ' uma Pokédex do anime Pokémon. Esse foi o primeiro projeto utilizando consumo de API.',
                     projectName: 'Pokédex',
                     projectUrl:
                         'https://github.com/feliper2002/pokedex-flutter-api',
                     cardColor: Colors.white,
                     cardShadowColor: Colors.green,
+                    projectImage:
+                        Image.asset('lib/assets/images/icon_pokedex.png'),
+                    usedTechnologies: 'Flutter',
+                  ),
+                  ProjectCard(
+                    projectDescription:
+                        'Jogue o famoso jogo "Pedra Papel e Tesoura" contra '
+                        'o seu próprio celular!'
+                        ' Ganha quem chegar primeiro aos 10 pontos!',
+                    projectName: 'JoKenPo',
+                    projectUrl:
+                        'https://github.com/feliper2002/Projetos-Flutter/tree/main/jokenpo_app',
+                    cardColor: Colors.white,
+                    cardShadowColor: Colors.green,
+                    usedTechnologies: 'Flutter',
+                  ),
+                  ProjectCard(
+                    projectDescription:
+                        'Esse site foi desenvolvido com o Flutter Web!'
+                        ' O site estará em constante atualização para adição de projetos.',
+                    projectName: 'Portfólio',
+                    projectUrl:
+                        'https://github.com/feliper2002/felipe.developer',
+                    cardColor: Colors.white,
+                    cardShadowColor: Colors.green,
+                    usedTechnologies: 'Flutter Web',
                   ),
                 ],
               ),
