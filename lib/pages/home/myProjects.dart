@@ -13,9 +13,9 @@ class _MyProjectsState extends State<MyProjects> {
   @override
   Widget build(BuildContext context) {
     return Card(
-      shadowColor: Colors.lightBlue,
+      shadowColor: Theme.of(context).shadowColor,
       elevation: 5,
-      color: Colors.blueGrey[900],
+      color: Theme.of(context).primaryColor,
       child: Container(
         padding: EdgeInsets.only(
           top: 5,

@@ -16,11 +16,11 @@ class _StudiesAndTechnologyState extends State<StudiesAndTechnology> {
   Widget build(BuildContext context) {
     return Center(
       child: Card(
-        shadowColor: Colors.lightBlue,
+        shadowColor: Theme.of(context).shadowColor,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         elevation: 5,
         child: Container(
-          color: Colors.blueGrey[900],
+          color: Theme.of(context).primaryColor,
           height: 500,
           width: 700,
           child: Padding(

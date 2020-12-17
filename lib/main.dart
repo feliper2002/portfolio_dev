@@ -21,7 +21,12 @@ class Portfolio extends StatelessWidget {
         scaffoldBackgroundColor: Colors.blueGrey[900],
         accentColorBrightness: Brightness.dark,
         backgroundColor: Colors.blueGrey[900],
+        shadowColor: Colors.lightBlue,
         primaryColor: Colors.blueGrey[900],
+        dividerColor: Colors.white,
+        buttonTheme: ButtonThemeData(
+          buttonColor: Colors.blue[800],
+        ),
       ),
     );
   }

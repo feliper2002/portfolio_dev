@@ -17,7 +17,7 @@ class BottomBar extends StatelessWidget {
           color: Colors.transparent,
         ),
         Divider(
-          color: Colors.white,
+          color: Theme.of(context).dividerColor,
           height: 4,
           thickness: 3,
           indent: 50,
