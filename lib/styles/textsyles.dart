@@ -22,7 +22,7 @@ var linkedinStyle = GoogleFonts.vt323(
 
 var projectCard_style = GoogleFonts.vt323(
   fontSize: 20,
-  color: Colors.grey[600],
+  color: Colors.white,
 );
 
 var projectsContainer_style = GoogleFonts.vt323(

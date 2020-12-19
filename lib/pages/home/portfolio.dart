@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/pages/home/bottomBar.dart';
-import 'package:portfolio/pages/home/contacts.dart';
-import 'package:portfolio/pages/home/myProjects.dart';
-import 'package:portfolio/pages/home/studiesAndTech.dart';
+import 'package:portfolio/pages/home/widgets/bottomBar.dart';
+import 'package:portfolio/pages/home/widgets/contacts.dart';
+import 'package:portfolio/pages/home/widgets/myProjects.dart';
+import 'package:portfolio/pages/home/widgets/studiesAndTech.dart';
 import 'package:portfolio/models/appbar/appbar_portfolio.dart';
 import 'package:portfolio/styles/textsyles.dart';
 

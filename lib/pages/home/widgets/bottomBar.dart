@@ -27,7 +27,7 @@ class BottomBar extends StatelessWidget {
         Container(
           child: Center(
             child: Text(
-              'Site desenvolvido por Felipe Ribeiro. 2020',
+              'felipe.developer - Felipe Ribeiro. 2020',
               style: creditsTextStyle,
             ),
           ),

@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:portfolio/styles/textsyles.dart';
 import 'dart:html' as html;
@@ -69,10 +71,19 @@ class _ProjectCardState extends State<ProjectCard> {
                   ),
                 ],
               ),
-              Text(
-                'Tecnologias:\n'
-                '${widget.usedTechnologies}',
-                style: projectsCardAboutTextStyle,
+              Column(
+                children: [
+                  SizedBox(height: 45),
+                  Text(
+                    'Tecnologias:\n',
+                    //'${widget.usedTechnologies}',
+                    style: projectsCardAboutTextStyle,
+                  ),
+                  SizedBox(height: 5),
+                  FlutterLogo(
+                    size: 40,
+                  ),
+                ],
               ),
             ],
           ),

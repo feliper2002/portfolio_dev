@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:portfolio/styles/textsyles.dart';
 
+import 'socialMedias.dart';
+
 class StudiesAndTechnology extends StatefulWidget {
   StudiesAndTechnology({Key key}) : super(key: key);
 
@@ -43,21 +45,22 @@ class _StudiesAndTechnologyState extends State<StudiesAndTechnology> {
                         'Flutter Developer',
                         style: flutterDev_style,
                       ),
-                      Text('☕', style: TextStyle(fontSize: 18)),
+                      Text('☕💙', style: TextStyle(fontSize: 18)),
                       SizedBox(height: 16),
                       Container(
-                        height: 180,
-                        width: 450,
+                        height: 200,
+                        width: 525,
                         child: Text(
                           'Estudante de Engenharia de Controle e Automação.\n'
                           'Estudando Desenvolvimento Mobile com Flutter desde outubro de 2020.\n'
-                          'Experiência com Python, C e C++. Porém, atualmente meu foco está sendo em dominar Dart e Flutter.\n'
-                          'No tempo livre gosto de trabalhar em projetos pessoais utilizando o Flutter para colocar conhecimentos em prática.',
+                          'Já tive contato com Python, C e C++. Porém, atualmente meu foco está sendo em dominar Dart e a framework Flutter.\n'
+                          'No tempo livre gosto de trabalhar em projetos pessoais utilizando o Flutter para colocar conhecimentos em prática.'
+                          '\nTambém estou me dedicando para aprender tecnologias de Gerenciamento de Estado, como o MobX.',
                           style: mainContainerTextStyle,
                         ),
                       ),
-                      SizedBox(height: 16),
-                      // SocialMedias(),
+                      SizedBox(height: 22),
+                      SocialMedias(),
                     ],
                   ),
                 ),

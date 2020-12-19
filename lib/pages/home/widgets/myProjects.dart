@@ -48,7 +48,7 @@ class _MyProjectsState extends State<MyProjects> {
                     projectName: 'Pokédex',
                     projectUrl:
                         'https://github.com/feliper2002/pokedex-flutter-api',
-                    cardColor: Colors.white,
+                    cardColor: Colors.red[400],
                     cardShadowColor: Colors.green,
                     projectImage:
                         Image.asset('lib/assets/images/icon_pokedex.png'),
@@ -62,7 +62,7 @@ class _MyProjectsState extends State<MyProjects> {
                     projectName: 'JoKenPo',
                     projectUrl:
                         'https://github.com/feliper2002/Projetos-Flutter/tree/main/jokenpo_app',
-                    cardColor: Colors.white,
+                    cardColor: Colors.orange[400],
                     cardShadowColor: Colors.green,
                     usedTechnologies: 'Flutter',
                   ),
@@ -73,7 +73,7 @@ class _MyProjectsState extends State<MyProjects> {
                     projectName: 'Portfólio',
                     projectUrl:
                         'https://github.com/feliper2002/felipe.developer',
-                    cardColor: Colors.white,
+                    cardColor: Colors.blueAccent[400],
                     cardShadowColor: Colors.green,
                     usedTechnologies: 'Flutter Web',
                   ),
