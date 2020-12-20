@@ -5,7 +5,7 @@ AppBar AppBarWidget() {
   return AppBar(
     centerTitle: true,
     elevation: 0,
-    backgroundColor: Colors.blueGrey[900],
+    backgroundColor: Colors.grey[900],
     title: Column(
       children: [
         Text(

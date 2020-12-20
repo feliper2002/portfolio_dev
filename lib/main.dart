@@ -17,12 +17,11 @@ class Portfolio extends StatelessWidget {
         title: 'felipe.developer',
       ),
       theme: ThemeData(
-        bottomAppBarTheme: BottomAppBarTheme(color: Colors.blueGrey[900]),
-        scaffoldBackgroundColor: Colors.blueGrey[900],
-        accentColorBrightness: Brightness.dark,
-        backgroundColor: Colors.blueGrey[900],
-        shadowColor: Colors.lightBlue,
-        primaryColor: Colors.blueGrey[900],
+        bottomAppBarTheme: BottomAppBarTheme(color: Colors.blueGrey[600]),
+        scaffoldBackgroundColor: Colors.grey[900],
+        backgroundColor: Colors.grey[700],
+        // shadowColor: Colors.lightBlue,
+        primaryColor: Colors.grey[700],
         dividerColor: Colors.white,
         buttonTheme: ButtonThemeData(
           buttonColor: Colors.blue[800],

@@ -27,12 +27,25 @@ class _SMCardState extends State<SMCard> {
           '${widget.label}',
         );
       },
-      child: Container(
-        height: 30,
-        width: 30,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: widget.iconImage,
+      child: Card(
+        margin: EdgeInsets.all(10),
+        color: Colors.grey[800],
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
+        child: Container(
+          height: 40,
+          width: 150,
+          child: Align(
+            alignment: Alignment.center,
+            child: Text(
+              widget.label,
+              style: mainContainerTextStyle,
+            ),
+          ),
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              alignment: Alignment.centerLeft,
+              image: widget.iconImage,
+            ),
           ),
         ),
       ),

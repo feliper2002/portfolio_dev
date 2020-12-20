@@ -14,12 +14,12 @@ class SocialMedias extends StatelessWidget {
       children: [
         SMCard(
           iconUrl: 'https://github.com/feliper2002',
-          label: 'feliper2002',
+          label: '  GITHUB',
           iconImage: AssetImage('lib/assets/icons/github.png'),
         ),
         SMCard(
           iconUrl: 'instagram.com/felipe.developer/',
-          label: 'felipe.developer',
+          label: '   INSTAGRAM',
           iconImage: AssetImage('lib/assets/icons/instagram.webp'),
         ),
       ],

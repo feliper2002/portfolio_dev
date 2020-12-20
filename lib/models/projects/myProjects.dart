@@ -13,9 +13,10 @@ class _MyProjectsState extends State<MyProjects> {
   @override
   Widget build(BuildContext context) {
     return Card(
-      shadowColor: Theme.of(context).shadowColor,
-      elevation: 5,
+      // shadowColor: Theme.of(context).shadowColor,
+      // elevation: 5,
       color: Theme.of(context).primaryColor,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       child: Container(
         padding: EdgeInsets.only(
           top: 5,

@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/models/projects/myProjects.dart';
 import 'package:portfolio/pages/home/widgets/bottomBar.dart';
 import 'package:portfolio/pages/home/widgets/contacts.dart';
-import 'package:portfolio/pages/home/widgets/myProjects.dart';
 import 'package:portfolio/pages/home/widgets/studiesAndTech.dart';
 import 'package:portfolio/models/appbar/appbar_portfolio.dart';
-import 'package:portfolio/styles/textsyles.dart';
 
 class FelipePortfolio extends StatefulWidget {
   FelipePortfolio({Key key, this.title}) : super(key: key);

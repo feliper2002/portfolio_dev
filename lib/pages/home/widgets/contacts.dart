@@ -8,17 +8,14 @@ class Contacts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      shadowColor: Theme.of(context).shadowColor,
-      elevation: 5,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
       color: Theme.of(context).primaryColor,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       child: Container(
         padding: EdgeInsets.only(
           left: 5,
           right: 5,
           top: 5,
         ),
-        color: Theme.of(context).primaryColor,
         height: 100,
         width: 500,
         child: Column(
