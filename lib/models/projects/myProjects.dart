@@ -69,6 +69,16 @@ class _MyProjectsState extends State<MyProjects> {
                   ),
                   ProjectCard(
                     projectDescription:
+                        'O Anime List é um app para você guardar os animes que você está assistindo,'
+                        ' podendo registrar seus stats em relação ao mesmo!',
+                    projectName: 'Anime List',
+                    projectUrl: 'https://github.com/feliper2002/Anime-List',
+                    cardColor: Colors.blue[900],
+                    cardShadowColor: Colors.green,
+                    usedTechnologies: 'Flutter',
+                  ),
+                  ProjectCard(
+                    projectDescription:
                         'Esse site foi desenvolvido com o Flutter Web!'
                         ' O site estará em constante atualização para adição de projetos.',
                     projectName: 'Portfólio',

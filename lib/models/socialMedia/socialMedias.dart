@@ -18,7 +18,7 @@ class SocialMedias extends StatelessWidget {
           iconImage: AssetImage('lib/assets/icons/github.png'),
         ),
         SMCard(
-          iconUrl: 'instagram.com/felipe.developer/',
+          iconUrl: 'https://instagram.com/felipe.developer/',
           label: '   INSTAGRAM',
           iconImage: AssetImage('lib/assets/icons/instagram.webp'),
         ),
