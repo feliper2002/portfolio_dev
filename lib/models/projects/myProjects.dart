@@ -69,7 +69,7 @@ class _MyProjectsState extends State<MyProjects> {
                   ),
                   ProjectCard(
                     projectDescription:
-                        'O Anime List é um app para você guardar os animes que você está assistindo,'
+                        'Um app para você guardar os animes que você está assistindo,'
                         ' podendo registrar seus stats em relação ao mesmo!',
                     projectName: 'Anime List',
                     projectUrl: 'https://github.com/feliper2002/Anime-List',
