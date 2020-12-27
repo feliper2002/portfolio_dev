@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/pages/home/portfolio.dart';
+import 'package:portfolio/styles/themeScheme.dart';
 
 void main() {
   runApp(Portfolio());
@@ -14,19 +15,9 @@ class Portfolio extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'felipe.developer',
       home: FelipePortfolio(
-        title: 'felipe.developer',
+        title: 'FELIPE DEVELOPER',
       ),
-      theme: ThemeData(
-        bottomAppBarTheme: BottomAppBarTheme(color: Colors.blueGrey[600]),
-        scaffoldBackgroundColor: Colors.grey[900],
-        backgroundColor: Colors.grey[700],
-        // shadowColor: Colors.lightBlue,
-        primaryColor: Colors.grey[700],
-        dividerColor: Colors.white,
-        buttonTheme: ButtonThemeData(
-          buttonColor: Colors.blue[800],
-        ),
-      ),
+      theme: themeScheme(),
     );
   }
 }

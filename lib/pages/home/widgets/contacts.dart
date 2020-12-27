@@ -24,7 +24,7 @@ class Contacts extends StatelessWidget {
             Align(
               alignment: Alignment.topLeft,
               child: Text(
-                ' CONTACTS',
+                ' CONTATOS',
                 style: projectsContainer_style,
               ),
             ),

@@ -31,7 +31,7 @@ class _MyProjectsState extends State<MyProjects> {
             Align(
               alignment: Alignment.topLeft,
               child: Text(
-                '  PROJECTS',
+                '  PROJETOS',
                 style: projectsContainer_style,
               ),
             ),

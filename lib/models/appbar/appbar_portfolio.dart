@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/styles/textsyles.dart';
 
-AppBar AppBarWidget() {
+AppBar AppBarWidget(String title) {
   return AppBar(
     centerTitle: true,
     elevation: 0,
@@ -9,7 +9,7 @@ AppBar AppBarWidget() {
     title: Column(
       children: [
         Text(
-          'FELIPE DEVELOPER',
+          title,
           style: appBarstyle,
         ),
         Divider(

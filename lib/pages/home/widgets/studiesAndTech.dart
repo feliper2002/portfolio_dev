@@ -11,8 +11,6 @@ class StudiesAndTechnology extends StatefulWidget {
 }
 
 class _StudiesAndTechnologyState extends State<StudiesAndTechnology> {
-  var profilePic = AssetImage('lib/assets/images/profilepic.jpg');
-
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -25,11 +23,7 @@ class _StudiesAndTechnologyState extends State<StudiesAndTechnology> {
           padding: EdgeInsets.all(8),
           child: Column(
             children: [
-              CircleAvatar(
-                radius: 60,
-                backgroundImage: profilePic,
-              ),
-              SizedBox(height: 10),
+              SizedBox(height: 105),
               Center(
                 child: Column(
                   children: [

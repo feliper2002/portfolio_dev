@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/models/projects/myProjects.dart';
+import 'package:portfolio/pages/home/widgets/Avatar/avatarbackground.dart';
 import 'package:portfolio/pages/home/widgets/bottomBar.dart';
 import 'package:portfolio/pages/home/widgets/contacts.dart';
 import 'package:portfolio/pages/home/widgets/studiesAndTech.dart';
 import 'package:portfolio/models/appbar/appbar_portfolio.dart';
+
+import 'widgets/Avatar/avatarfelipe.dart';
 
 class FelipePortfolio extends StatefulWidget {
   FelipePortfolio({Key key, this.title}) : super(key: key);
@@ -17,22 +20,28 @@ class _FelipePortfolioState extends State<FelipePortfolio> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBarWidget(),
+      appBar: AppBarWidget(widget.title),
       body: SingleChildScrollView(
         physics: BouncingScrollPhysics(),
-        child: Column(
+        child: Stack(
           children: [
-            SizedBox(
-              height: 15,
+            Column(
+              children: [
+                SizedBox(
+                  height: 45,
+                ),
+                StudiesAndTechnology(),
+                SizedBox(
+                  height: 20,
+                ),
+                MyProjects(),
+                SizedBox(height: 20),
+                Contacts(),
+                BottomBar(),
+              ],
             ),
-            StudiesAndTechnology(),
-            SizedBox(
-              height: 20,
-            ),
-            MyProjects(),
-            SizedBox(height: 20),
-            Contacts(),
-            BottomBar(),
+            AvatarBackground(),
+            AvatarFelipe(),
           ],
         ),
       ),
