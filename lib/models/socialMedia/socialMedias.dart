@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/models/socialMedia/socialMediaIcon.dart';
-import 'package:portfolio/styles/textsyles.dart';
-import 'dart:html' as html;
 
 class SocialMedias extends StatelessWidget {
   const SocialMedias({Key key}) : super(key: key);

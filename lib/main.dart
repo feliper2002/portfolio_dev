@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/pages/home/portfolio.dart';
-import 'package:portfolio/styles/themeScheme.dart';
+import 'pages/home/portfolio.dart';
+import 'styles/themeScheme.dart';
 
-void main() {
-  runApp(Portfolio());
-}
+void main() => runApp(Portfolio());
 
 class Portfolio extends StatelessWidget {
   const Portfolio({Key key}) : super(key: key);
