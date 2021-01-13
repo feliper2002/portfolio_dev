@@ -10,6 +10,15 @@ var myName_style = GoogleFonts.vt323(
   fontSize: 30,
 );
 
+var techStyle = GoogleFonts.vt323(
+  color: Colors.white,
+  fontSize: 28,
+);
+var experienceStyle = GoogleFonts.vt323(
+  color: Colors.white,
+  fontSize: 28,
+);
+
 var flutterDev_style = GoogleFonts.vt323(
   fontSize: 24,
   color: Colors.grey[400],

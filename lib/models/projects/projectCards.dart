@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:portfolio/styles/textsyles.dart';
 import 'dart:html' as html;
 
@@ -12,17 +13,13 @@ class ProjectCard extends StatefulWidget {
     this.projectDescription,
     this.projectImage,
     this.cardColor,
-    this.cardShadowColor,
-    this.usedTechnologies,
   }) : super(key: key);
 
   String projectUrl;
   String projectName;
   String projectDescription;
-  String usedTechnologies;
   Image projectImage;
   Color cardColor;
-  Color cardShadowColor;
 
   @override
   _ProjectCardState createState() => _ProjectCardState();
@@ -40,7 +37,6 @@ class _ProjectCardState extends State<ProjectCard> {
         width: 330,
         child: Card(
           color: widget.cardColor,
-          shadowColor: widget.cardShadowColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
           ),
@@ -56,7 +52,7 @@ class _ProjectCardState extends State<ProjectCard> {
                   Container(
                     padding: EdgeInsets.only(left: 5, top: 3, right: 3),
                     height: 160,
-                    width: 130,
+                    width: 190,
                     child: Text(
                       '${widget.projectDescription}' == null
                           ? ' '
@@ -74,15 +70,6 @@ class _ProjectCardState extends State<ProjectCard> {
               Column(
                 children: [
                   SizedBox(height: 45),
-                  Text(
-                    'Tecnologias:\n',
-                    //'${widget.usedTechnologies}',
-                    style: projectsCardAboutTextStyle,
-                  ),
-                  SizedBox(height: 5),
-                  FlutterLogo(
-                    size: 40,
-                  ),
                 ],
               ),
             ],

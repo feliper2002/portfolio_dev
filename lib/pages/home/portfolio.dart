@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/models/projects/myProjects.dart';
+import 'package:portfolio/pages/home/widgets/myProjects.dart';
 import 'package:portfolio/pages/home/widgets/Avatar/avatarbackground.dart';
 import 'package:portfolio/pages/home/widgets/bottomBar.dart';
 import 'package:portfolio/pages/home/widgets/contacts.dart';
+import 'package:portfolio/pages/home/widgets/Info/infos.dart';
 import 'package:portfolio/pages/home/widgets/studiesAndTech.dart';
 import 'package:portfolio/models/appbar/appbar_portfolio.dart';
 
@@ -36,6 +37,7 @@ class _FelipePortfolioState extends State<FelipePortfolio> {
                 ),
                 MyProjects(),
                 SizedBox(height: 20),
+                OtherInfos(),
                 Contacts(),
                 BottomBar(),
               ],

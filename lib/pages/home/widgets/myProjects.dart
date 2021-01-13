@@ -13,8 +13,6 @@ class _MyProjectsState extends State<MyProjects> {
   @override
   Widget build(BuildContext context) {
     return Card(
-      // shadowColor: Theme.of(context).shadowColor,
-      // elevation: 5,
       color: Theme.of(context).primaryColor,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       child: Container(
@@ -25,7 +23,6 @@ class _MyProjectsState extends State<MyProjects> {
         ),
         height: 280,
         width: 700,
-        // color: Colors.blueGrey[900],
         child: Column(
           children: [
             Align(
@@ -45,15 +42,22 @@ class _MyProjectsState extends State<MyProjects> {
                 children: [
                   ProjectCard(
                     projectDescription: 'Uma aplicação que simula'
+                        ' uma Pokédex do anime Pokémon. Novo design + desenvolvido com MobX.',
+                    projectName: 'Pokédex - MobX',
+                    projectUrl:
+                        'https://github.com/feliper2002/pokedex-flutter-mobx',
+                    cardColor: Colors.blue[400],
+                    projectImage: Image.asset('lib/assets/images/mobx.png'),
+                  ),
+                  ProjectCard(
+                    projectDescription: 'Uma aplicação que simula'
                         ' uma Pokédex do anime Pokémon. Esse foi o primeiro projeto utilizando consumo de API.',
                     projectName: 'Pokédex',
                     projectUrl:
                         'https://github.com/feliper2002/pokedex-flutter-api',
                     cardColor: Colors.red[400],
-                    cardShadowColor: Colors.green,
                     projectImage:
                         Image.asset('lib/assets/images/icon_pokedex.png'),
-                    usedTechnologies: 'Flutter',
                   ),
                   ProjectCard(
                     projectDescription:
@@ -64,8 +68,6 @@ class _MyProjectsState extends State<MyProjects> {
                     projectUrl:
                         'https://github.com/feliper2002/Projetos-Flutter/tree/main/jokenpo_app',
                     cardColor: Colors.orange[400],
-                    cardShadowColor: Colors.green,
-                    usedTechnologies: 'Flutter',
                   ),
                   ProjectCard(
                     projectDescription:
@@ -74,8 +76,6 @@ class _MyProjectsState extends State<MyProjects> {
                     projectName: 'Anime List',
                     projectUrl: 'https://github.com/feliper2002/Anime-List',
                     cardColor: Colors.blue[900],
-                    cardShadowColor: Colors.green,
-                    usedTechnologies: 'Flutter',
                   ),
                   ProjectCard(
                     projectDescription:
@@ -85,11 +85,13 @@ class _MyProjectsState extends State<MyProjects> {
                     projectUrl:
                         'https://github.com/feliper2002/felipe.developer',
                     cardColor: Colors.blueAccent[400],
-                    cardShadowColor: Colors.green,
-                    usedTechnologies: 'Flutter Web',
                   ),
                 ],
               ),
+            ),
+            Text(
+              'Confira mais projetos no meu Github!',
+              style: mainContainerTextStyle,
             ),
           ],
         ),
