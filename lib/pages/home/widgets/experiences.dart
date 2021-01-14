@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/styles/textsyles.dart';
 
-class Expeciences extends StatelessWidget {
+class Experiences extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: 20, right: 4, bottom: 18),
+      margin: EdgeInsets.only(bottom: 18),
       height: 265,
-      width: 339,
+      width: 678,
       child: Card(
         color: Theme.of(context).primaryColor,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),

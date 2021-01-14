@@ -3,11 +3,11 @@ import 'package:portfolio/pages/home/widgets/myProjects.dart';
 import 'package:portfolio/pages/home/widgets/Avatar/avatarbackground.dart';
 import 'package:portfolio/pages/home/widgets/bottomBar.dart';
 import 'package:portfolio/pages/home/widgets/contacts.dart';
-import 'package:portfolio/pages/home/widgets/Info/infos.dart';
 import 'package:portfolio/pages/home/widgets/studiesAndTech.dart';
 import 'package:portfolio/models/appbar/appbar_portfolio.dart';
 
 import 'widgets/Avatar/avatarfelipe.dart';
+import 'widgets/experiences.dart';
 
 class FelipePortfolio extends StatefulWidget {
   FelipePortfolio({Key key, this.title}) : super(key: key);
@@ -37,7 +37,7 @@ class _FelipePortfolioState extends State<FelipePortfolio> {
                 ),
                 MyProjects(),
                 SizedBox(height: 20),
-                OtherInfos(),
+                Experiences(),
                 Contacts(),
                 BottomBar(),
               ],
