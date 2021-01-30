@@ -29,7 +29,7 @@ class Contacts extends StatelessWidget {
               ),
             ),
             Text(
-              'felipe.engcontrole@gmail.com',
+              'feliper.dev@gmail.com',
               style: contactTextStyle,
             ),
             InkWell(
