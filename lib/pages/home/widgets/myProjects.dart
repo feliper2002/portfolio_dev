@@ -41,6 +41,15 @@ class _MyProjectsState extends State<MyProjects> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   ProjectCard(
+                    projectDescription:
+                        'Layout feito para o desafio proposto pela comunidade Flutterando que'
+                        ' simula o design do Nintendo Switch',
+                    projectName: 'Flutterando Switch',
+                    projectUrl:
+                        'https://github.com/feliper2002/Flutterando-Switch',
+                    cardColor: Colors.greenAccent[400],
+                  ),
+                  ProjectCard(
                     projectDescription: 'Uma aplicação que simula'
                         ' uma Pokédex do anime Pokémon. Novo design + desenvolvido com MobX.',
                     projectName: 'Pokédex - MobX',
