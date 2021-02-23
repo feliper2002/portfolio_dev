@@ -1,10 +1,8 @@
-import 'package:feliper_developer/shared/widgets/info.dart';
-import 'package:feliper_developer/shared/widgets/technologies.dart';
+import 'package:feliper_developer/shared/constants/app_consts.dart';
 import 'package:feliper_developer/views/mobile/mobile_home.dart';
-import 'package:feliper_developer/views/widgets/about_me.dart';
-import '../../shared/styles/textStyles.dart';
+import '../../shared/widgets/main_body.dart';
+import '../../shared/widgets/profilepic.dart';
 import 'package:flutter/material.dart';
-import '../../shared/widgets/socialmedia_icons.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -12,14 +10,11 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  bool android;
-  bool desktop;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: LayoutBuilder(builder: (context, constraints) {
-        print(constraints.maxWidth.toString()); // 1366 ---- 811
+        print(constraints.maxWidth.toString());
         return Container(
           height: constraints.maxHeight,
           width: constraints.maxWidth,
@@ -27,14 +22,10 @@ class _HomePageState extends State<HomePage> {
             gradient: LinearGradient(
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
-              colors: [
-                Colors.blue,
-                Colors.blue[700],
-                Colors.blue[900],
-              ],
+              colors: backgroundColorsGradient,
             ),
           ),
-          child: (constraints.maxWidth > 1070)
+          child: (constraints.maxWidth > 1060)
               ? Center(
                   child: Container(
                     height: constraints.maxHeight * .7,
@@ -46,43 +37,8 @@ class _HomePageState extends State<HomePage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Container(
-                          margin: EdgeInsets.only(right: 20),
-                          height: constraints.maxHeight,
-                          width: constraints.maxWidth * .2,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(20),
-                              bottomLeft: Radius.circular(20),
-                            ),
-                            image: DecorationImage(
-                              image: AssetImage(
-                                'assets/profilepic.jpeg',
-                              ),
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          child: Row(
-                            children: [
-                              Expanded(
-                                child: Column(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text('Felipe Ribeiro', style: myNameStyle),
-                                    SocialMedia(mobile: false),
-                                    AboutMe(mobile: false),
-                                    Technologies(),
-                                  ],
-                                ),
-                              ),
-                              myInfo(constraints, mobile: false),
-                            ],
-                          ),
-                        ),
+                        ProfilePic(constraints: constraints),
+                        MainBody(constraints: constraints),
                       ],
                     ),
                   ),
