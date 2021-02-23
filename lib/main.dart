@@ -1,21 +1,17 @@
 import 'package:flutter/material.dart';
-import 'pages/home/portfolio.dart';
-import 'styles/themeScheme.dart';
+import 'views/home/home.dart';
+import 'shared/styles/theme.dart';
 
-void main() => runApp(Portfolio());
+void main() => runApp(InitApp());
 
-class Portfolio extends StatelessWidget {
-  const Portfolio({Key key}) : super(key: key);
-
+class InitApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'felipe.developer',
-      home: FelipePortfolio(
-        title: 'FELIPE DEVELOPER',
-      ),
-      theme: themeScheme(),
+      title: 'Felipe Developer',
+      theme: themeData(),
+      home: HomePage(),
     );
   }
 }

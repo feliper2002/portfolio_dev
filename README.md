@@ -1,13 +1,16 @@
-# Portfólio felipe.developer
+# feliper_developer
 
-Portfólio criado utilizando a tecnologia Flutter Web.
+A new Flutter project.
 
-[Acesse o site clicando aqui!](https://feliper.dev/)
+## Getting Started
 
-<img src='lib/screenshots/site.jpg' height=340 width=550>
+This project is a starting point for a Flutter application.
 
-#
+A few resources to get you started if this is your first Flutter project:
 
-Esse portfólio foi criado no intuíto tanto de praticar Flutter quanto da questão profissional de meus estudos na área de desenvolvimento utilizando a framework do Flutter.
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-<img src='https://flutter.dev/assets/flutter-lockup-1caf6476beed76adec3c477586da54de6b552b2f42108ec5bc68dc63bae2df75.png' height=70 width=200>
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
