@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'views/home/home.dart';
-import 'shared/styles/theme.dart';
+
+import 'pages/home.dart';
 
 void main() => runApp(InitApp());
 
@@ -10,7 +10,6 @@ class InitApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Felipe Developer',
-      theme: themeData(),
       home: HomePage(),
     );
   }
