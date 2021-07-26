@@ -1,5 +1,6 @@
 import 'package:feliper_developer/shared/themes/colors.dart';
 import 'package:feliper_developer/shared/themes/customText.dart';
+import 'package:feliper_developer/shared/widgets/personalInfo/socialMediaModel.dart';
 import 'package:flutter/material.dart';
 
 class PersonalInfo extends StatelessWidget {
@@ -35,7 +36,8 @@ class PersonalInfo extends StatelessWidget {
               textAlign: TextAlign.justify,
             ),
           ),
-          _socialMedias(),
+          SizedBox(height: 20),
+          SocialMediaModel(),
         ],
       ),
     );
@@ -48,12 +50,6 @@ class PersonalInfo extends StatelessWidget {
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(16),
-        ),
-      );
-
-  _socialMedias() => Container(
-        child: Column(
-          children: [],
         ),
       );
 }

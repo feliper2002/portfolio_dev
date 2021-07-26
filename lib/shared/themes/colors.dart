@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AppColors {
   // home page background
   static Color get homeBgColorBlue => Color(0xff00416A);
-  static Color get homeBgColorGrey => Color(0xffD9D9D9);
+  static Color get homeBgColorGrey => Color(0xFF2A2C42);
 
   static Color get tecnologyPinColor => Color(0xff344986);
   static Color get titleColor => Color(0xff083D56);
